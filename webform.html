@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML WEB FORM</title>
+    <style>
+        body {
+          font-family: Georgia, sans-serif;
+          font-size: large;
+          padding: 100px;
+          background-image: url(webform.jpg);
+        }
+        
+        .container {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+        
+        div {
+          margin-bottom: 50px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],select {
+          width: 100%;
+          height: 20px;
+          padding: 12px 20px;
+          margin: 8px 0;
+          border-radius: 10px;
+          border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+          background-color: #6ebcc6;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+    </style>    
+</head>
+<body>
+    <div class="container">
+        <h2>HTML WEB FORM</h2>
+    <form>
+        <div>
+            <label for="name">Name:</label><br>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <label for="name">Email:</label><br>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <label for="name">Phone:</label><br>
+            <input type="tel" name="Phone number" placeholder="Your Phone number" required>
+            <label for="issues">Choose your Issue:</label>
+            <select name="issues" id="issues">
+              <option value="query">Query</option>
+              <option value="feedback">Feedback</option>
+              <option value="complaint">Complaint</option>
+              <option value="other">Other</option>
+            </select>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
